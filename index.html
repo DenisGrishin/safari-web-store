@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Главная</title>
+	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220331105339">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220401230535">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
 					<div class="header__row-left header__row-left_column ">
 						<nav class="header__nav mune-header">
 							<ul class="mune-header__list mune-header__list_column">
-								<li class="mune-header__item "><a href="" class="mune-header__link mune-header__link_selected">Hosme</a>
+								<li class="mune-header__item "><a href="index.html" class="mune-header__link mune-header__link_selected">Home</a>
 								</li>
 								<li class="mune-header__item"><a href="" class="mune-header__link">Clothes</a></li>
 								<li class="mune-header__item"><a href="" class="mune-header__link">Shoes</a></li>
@@ -37,9 +37,10 @@
 						</form>
 						<nav class="header__nav mune-header">
 							<ul class="mune-header__list ">
-								<li class="mune-header__item "><a href="" class="mune-header__link _icon-profile"></a></li>
+								<li class="mune-header__item "><a href="account-information.html" class="mune-header__link _icon-profile"></a>
+								</li>
 								<li class="mune-header__item "><a href="" class="mune-header__link _icon-cart-shop"></a></li>
-								<li class="mune-header__item "><a href="" class="mune-header__link _icon-my-favorites"></a></li>
+								<li class="mune-header__item "><a href="" class="mune-header__link _icon-favorite"></a></li>
 							</ul>
 						</nav>
 					</div>
@@ -48,17 +49,32 @@
 			</div>
 		</header>
 		<main class="page">
-			<div data-fullscreen class="page__slider-main  main-slider">
+			<div class="page__slider-main  main-slider">
 				<div class="main-slider__container">
 					<ddiv class="main-slider__body">
 						<div class="main-slider__slider">
 							<div class="main-slider__swiper">
 
 								<div class="main-slider__slide">
-									<div class="main-slider__img"><picture><source data-srcset="img/main-slider/girl.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/girl.png" alt="girl"></picture></div>
-
+									<div class="main-slider__img">
+										<picture><source data-srcset="img/main-slider/girl.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/girl.png" alt="girl"></picture>
+									</div>
 								</div>
-
+								<div class="main-slider__slide">
+									<div class="main-slider__img">
+										<picture><source data-srcset="img/main-slider/girl.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/girl.png" alt="girl"></picture>
+									</div>
+								</div>
+								<div class="main-slider__slide">
+									<div class="main-slider__img">
+										<picture><source data-srcset="img/main-slider/girl.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/girl.png" alt="girl"></picture>
+									</div>
+								</div>
+								<div class="main-slider__slide">
+									<div class="main-slider__img">
+										<picture><source data-srcset="img/main-slider/girl.webp" type="image/webp"><img class="swiper-lazy" data-src="img/main-slider/girl.png" alt="girl"></picture>
+									</div>
+								</div>
 							</div>
 							<div class=" main-slider__pagging"></div>
 						</div>
@@ -276,7 +292,20 @@
 							</div>
 						</div>
 					</div>
+					<div class="style-your__num-page page-num">
+						<div class="page-num__container">
+							<div class="page-num__body">
+								<ul class="page-num__list">
+									<li class="page-num__item _active-page"><a class="page-num__link" href="">1</a></li>
+									<li class="page-num__item"><a class="page-num__link" href="">2</a></li>
+									<li class="page-num__item"><a class="page-num__link" href="">3</a></li>
+									<li class="page-num__item"><button type="submit" class="page-num__button-arrow"></button>
+									</li>
+								</ul>
 
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 	</div>
@@ -341,7 +370,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220331105339"></script>
+	<script src="js/app.min.js?_v=20220401230535"></script>
 </body>
 
 </html>
