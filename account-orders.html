@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Address-book</title>
+	<title>My Orders</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -62,37 +62,116 @@
 									<li class="mune-acc__item "><a class="mune-acc__link  _icon-profile" href="account-information.html">Account
 											Information</a>
 									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link mune-acc__link_selected _icon-address-book" href="">Address
+									<li class="mune-acc__item"><a class="mune-acc__link  _icon-address-book" href="account-adress-book.html">Address
 											Book</a>
+									</li>
+									<li class="mune-acc__item"><a class="mune-acc__link mune-acc__link_selected _icon-my-orders" href="">My Orders</a>
 										<div class="mune-acc__img"><img src="img/account/decor.svg" alt="decor">
 										</div>
 									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link _icon-my-orders" href="account-orders.html">My Orders</a>
-									</li>
 									<li class="mune-acc__item"><a class="mune-acc__link _icon-favorite" href="account-my-favorites.html">My Favorites</a>
 									</li>
-
 								</ul>
 							</div>
 							<button type="submit" class="sidebar-acc__sing-out _icon-sing-out">SIGN OUT</button>
 						</nav>
 					</div>
 					<div class="account__body">
-						<h2 class="account__title">Address Book</h2>
-						<div class="account__address-book book-address">
-							<h3 class="book-address__title">Default Shipping Address</h3>
-							<ul class="book-address__info-user-contact">
-								<li class="book-address__item">Ayokunle Oriolowo</li>
-								<li class="book-address__item">No 4 Barnawa Close, Barnawa, Kaduna</li>
-								<li class="book-address__item">Kaduna, Kaduna</li>
-								<li class="book-address__item">Nigeria</li>
-								<li class="book-address__item">+234 708 568 5878</li>
-							</ul>
-							<div class="book-address__bnts-ed-del">
-								<button type="submit" class="book-address__button">Edit</button>
-								<button type="submit" class="book-address__button">Delete</button>
+						<h2 class="account__title">My Orders</h2>
+						<div class="account__my-orders orders">
+
+							<div class="orders__items">
+								<div class="orders__item item-order">
+									<div class="item-order__item product-column">
+										<div class="product-column__block-right">
+											<a href="" class="product-column__img">
+												<picture><source srcset="img/account/my-orders/01.webp" type="image/webp"><img src="img/account/my-orders/01.jpg" alt=""></picture>
+											</a>
+											<div class="product-column_md-delivery">Delivered</div>
+										</div>
+										<div class="product-column__body">
+											<a href="" class="product-column__title">Casual flat loafers</a>
+											<div class="product-column__size">Size - EU: 36 US: 5.5</div>
+											<div class="product-column__price">₦ 10,000</div>
+											<div class="product-column__qty">Qty: 1</div>
+											<div class="product-column__date">On 20/07/2020</div>
+										</div>
+
+									</div>
+									<div data-spollers="992,max" class="spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Payment
+												details</button>
+											<div class="item-order payment-column">
+												<div class="payment-column__title">Payment details</div>
+												<div class="payment-column__product-total">Item’s total - ₦ 10,000 </div>
+												<div class="payment-column__deliveryl">Delivery fee - ₦ 2,000 </div>
+												<div class="payment-column__total">Delivery fee - ₦ 2,000 </div>
+											</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Delivery method & Shipping
+												address</button>
+											<div class="item-order del-ship-addr-column">
+												<div class="del-ship-addr-column__delivery">
+													<div class="del-ship-addr-column__title">Delivery method</div>
+													<div class="del-ship-addr-column__text">Door delivery</div>
+												</div>
+												<div class="del-ship-addr-column__delivery">
+													<div class="del-ship-addr-column__title">Shipping address</div>
+													<div class="del-ship-addr-column__text">Ayokunle Oriolowo <br>
+														4, Barnawa Close, Barnawa Kaduna.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="orders__item item-order">
+									<div class="item-order__item product-column">
+										<div class="product-column__block-right">
+											<a href="" class="product-column__img">
+												<picture><source srcset="img/account/my-orders/02.webp" type="image/webp"><img src="img/account/my-orders/02.jpg" alt=""></picture>
+											</a>
+											<div class="product-column_md-delivery">Delivered</div>
+										</div>
+										<div class="product-column__body">
+											<a href="" class="product-column__title">Multicolored armless top</a>
+											<div class="product-column__size">Size - XS</div>
+											<div class="product-column__price">₦ 10,000</div>
+											<div class="product-column__qty">Qty: 1</div>
+											<div class="product-column__date">Between 20/07/2020 - 25/07/2020</div>
+										</div>
+
+									</div>
+									<div data-spollers="992,max" class="spollers">
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Payment
+												details</button>
+											<div class="item-order payment-column">
+												<div class="payment-column__title">Payment details</div>
+												<div class="payment-column__product-total">Item’s total - ₦ 10,000 </div>
+												<div class="payment-column__deliveryl">Delivery fee - ₦ 2,000 </div>
+												<div class="payment-column__total">Delivery fee - ₦ 12,000 </div>
+											</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Delivery method & Shipping
+												address</button>
+											<div class="item-order del-ship-addr-column">
+												<div class="del-ship-addr-column__delivery">
+													<div class="del-ship-addr-column__title">Delivery method</div>
+													<div class="del-ship-addr-column__text">Door delivery</div>
+												</div>
+												<div class="del-ship-addr-column__delivery">
+													<div class="del-ship-addr-column__title">Shipping address</div>
+													<div class="del-ship-addr-column__text">Ayokunle Oriolowo <br>
+														4, Barnawa Close, Barnawa Kaduna.</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<button type="submit" class="button">ADD NEW ADDRESS</button>
 						</div>
 					</div>
 				</div>

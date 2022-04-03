@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Address-book</title>
+	<title>My Favorites</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -62,14 +62,15 @@
 									<li class="mune-acc__item "><a class="mune-acc__link  _icon-profile" href="account-information.html">Account
 											Information</a>
 									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link mune-acc__link_selected _icon-address-book" href="">Address
+									<li class="mune-acc__item"><a class="mune-acc__link  _icon-address-book" href="">Address
 											Book</a>
-										<div class="mune-acc__img"><img src="img/account/decor.svg" alt="decor">
-										</div>
+
 									</li>
 									<li class="mune-acc__item"><a class="mune-acc__link _icon-my-orders" href="account-orders.html">My Orders</a>
 									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link _icon-favorite" href="account-my-favorites.html">My Favorites</a>
+									<li class="mune-acc__item"><a class="mune-acc__link mune-acc__link_selected _icon-favorite" href="">My Favorites</a>
+										<div class="mune-acc__img"><img src="img/account/decor.svg" alt="decor">
+										</div>
 									</li>
 
 								</ul>
@@ -78,21 +79,38 @@
 						</nav>
 					</div>
 					<div class="account__body">
-						<h2 class="account__title">Address Book</h2>
-						<div class="account__address-book book-address">
-							<h3 class="book-address__title">Default Shipping Address</h3>
-							<ul class="book-address__info-user-contact">
-								<li class="book-address__item">Ayokunle Oriolowo</li>
-								<li class="book-address__item">No 4 Barnawa Close, Barnawa, Kaduna</li>
-								<li class="book-address__item">Kaduna, Kaduna</li>
-								<li class="book-address__item">Nigeria</li>
-								<li class="book-address__item">+234 708 568 5878</li>
-							</ul>
-							<div class="book-address__bnts-ed-del">
-								<button type="submit" class="book-address__button">Edit</button>
-								<button type="submit" class="book-address__button">Delete</button>
+						<h2 class="account__title">My Favorites</h2>
+						<div class="account__favorites favorites">
+							<div class="favorites__items">
+								<div class="favorites__item">
+									<div class="product-favaorite">
+										<a href="" class="product-favaorite__img"> <picture><source srcset="img/account/my-orders/01.webp" type="image/webp"><img src="img/account/my-orders/01.jpg" alt="my-orders"></picture></a>
+										<div class="product-favaorite__body">
+											<a href class="product-favaorite__name">Casual flat loafers</a>
+											<div class="product-favaorite__size">Size - EU: 36 US: 5.5</div>
+											<div class="product-favaorite__price">₦ 10,000</div>
+										</div>
+									</div>
+									<div class="favorites__buttons">
+										<button type="submit" class="button">BUY NOW</button>
+										<button type="submit" class="button button_white"><span class="favorites__btn-remove"></span> REMOVE</button>
+									</div>
+								</div>
+								<div class="favorites__item">
+									<div class="product-favaorite">
+										<a href="" class="product-favaorite__img"> <picture><source srcset="img/account/my-orders/02.webp" type="image/webp"><img src="img/account/my-orders/02.jpg" alt="my-orders"></picture></a>
+										<div class="product-favaorite__body">
+											<a href class="product-favaorite__name">Casual flat loafers</a>
+											<div class="product-favaorite__size">Size - EU: 36 US: 5.5</div>
+											<div class="product-favaorite__price">₦ 10,000</div>
+										</div>
+									</div>
+									<div class="favorites__buttons">
+										<button type="submit" class="button">BUY NOW</button>
+										<button type="submit" class="button button_white"><span class="favorites__btn-remove"></span> REMOVE</button>
+									</div>
+								</div>
 							</div>
-							<button type="submit" class="button">ADD NEW ADDRESS</button>
 						</div>
 					</div>
 				</div>
