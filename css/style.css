@@ -3535,6 +3535,8 @@ body {
   height: 60px;
   display: grid;
   grid-template-columns: 304px 1fr;
+  position: relative;
+  z-index: 4;
 }
 @media (max-width: 61.99875em) {
   .section-clothes__top-row {
@@ -3543,24 +3545,24 @@ body {
   }
 }
 
-.row-top__title {
+.row-top-clothes__title {
   padding: 20px 0px 0px 0px;
 }
 @media (max-width: 61.99875em) {
-  .row-top__title {
+  .row-top-clothes__title {
     display: none;
   }
 }
 @media (min-width: 61.99875em) {
-  .row-top__select {
+  .row-top-clothes__select {
     justify-self: end;
   }
 }
-.row-top__select .select_form {
+.row-top-clothes__select .select_form {
   width: 100%;
   margin: 0;
 }
-.row-top__select .select__title {
+.row-top-clothes__select .select__title {
   padding: 9px 16px;
   width: 200px;
   font-weight: 600;
@@ -3569,10 +3571,10 @@ body {
   letter-spacing: 0.2px;
   border-radius: 0;
 }
-.row-top__select .select__value {
+.row-top-clothes__select .select__value {
   padding: 0;
 }
-.row-top__select .select__options {
+.row-top-clothes__select .select__options {
   width: 100%;
   border-radius: 0;
 }
