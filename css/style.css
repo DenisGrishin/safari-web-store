@@ -2007,7 +2007,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 6;
+  z-index: 4;
   transform: translate(-50%, -50%);
 }
 .touch .goods__hover {
@@ -2048,6 +2048,7 @@ body {
   border: 2px solid #ed165f;
   border-radius: 9px;
   margin: 0;
+  padding: 12px 14px;
 }
 .body-hover__add-basket {
   padding: 12px 14px;
