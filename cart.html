@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Аccount</title>
+	<title>Shopping Cart</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -41,10 +41,10 @@
 						<nav class="header__nav mune-header">
 							<ul class="mune-header__list ">
 								<li class="mune-header__item "><a href="account-information.html"
-										class="mune-header__link _icon-profile mune-header__link_icon"></a>
+										class="mune-header__link _icon-profile "></a>
 								</li>
 								<li class="mune-header__item "><a href="cart.html"
-										class="mune-header__link _icon-cart-shop"></a></li>
+										class="mune-header__link _icon-cart-shop mune-header__link_icon"></a></li>
 								<li class="mune-header__item "><a href="account-my-favorites.html"
 										class="mune-header__link _icon-favorite"></a></li>
 							</ul>
@@ -55,105 +55,121 @@
 			</div>
 		</header>
 		<main class="page">
-
-			<div class="page__account account">
-				<div class="account__bg"></div>
-				<button type="submit" class="account__burger-button ">ACCOUNT DASHBOARD</button>
-				<div class="account__container ">
-					<div class="account__sidebar sidebar-acc">
-						<button type="submit" class="sidebar-acc__btn">Close</button>
-						<nav class="sidebar-acc__nav">
-							<h3 class="sidebar-acc__title">ACCOUNT DASHBOARD</h3>
-							<div class="sidebar-acc__body mune-acc">
-								<ul class="mune-acc mune-acc__list">
-									<li class="mune-acc__item "><a class="mune-acc__link mune-acc__link_selected  _icon-profile"
-											href="account-information.html">Account
-											Information</a>
-										<div class="mune-acc__img"><img src="img/account/decor.svg" alt="decor">
+			<section class="page__cart cart-main">
+				<div class="cart-main__container_small">
+					<h3 class="cart-main__title">Shopping Cart (2 item)</h3>
+					<div class="cart-main__body">
+						<div class="cart-main__top-row row-top">
+							<div class="row-top__item ">ITEM DESCRIPTION</div>
+							<div class="row-top__item">QUANTITY</div>
+							<div class="row-top__item">UNIT PRICE</div>
+							<div class="row-top__item">SUB TOTAL</div>
+						</div>
+						<ul class="cart-main__items product-cart">
+							<li class="product-cart__item">
+								<div class="product-cart__block  ">
+									<div class="product-cart__section-descript">
+										<div class="product-cart__description">
+											<a href="" class="product-cart__img">
+												<picture>
+													<source srcset="img/account/my-orders/02.webp" type="image/webp"><img
+														src="img/account/my-orders/02.jpg" alt="my-orders">
+												</picture>
+											</a>
+											<div class="product-cart__body">
+												<a href class="product-cart__name">Casual flat loafers</a>
+												<div class="product-cart__size">Size - EU: 36 US: 5.5</div>
+												<div class="product-cart__value product-cart__value_m">UNIT PRICE: ₦ 10,000</div>
+												<div class="product-cart__value product-cart__value_m">SUB TOTAL: ₦ 10,000</div>
+											</div>
 										</div>
-									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link _icon-address-book"
-											href="account-adress-book.html">Address
-											Book</a></li>
-									<li class="mune-acc__item"><a class="mune-acc__link _icon-my-orders"
-											href="account-orders.html">My Orders</a>
-									</li>
-									<li class="mune-acc__item"><a class="mune-acc__link _icon-favorite"
-											href="account-my-favorites.html">My Favorites</a>
-									</li>
-								</ul>
-							</div>
-							<a href="user-sign-in-create-acc.html" class="sidebar-acc__sing-out _icon-sing-out">SIGN OUT</a>
-						</nav>
-					</div>
-					<div class="account__body">
-						<h2 class="account__title">User Information</h2>
-						<form action="#" class="info-form__acc-form form-block">
-							<div class="form-block__items form-block__items_two-column">
-								<div class="form-block__item">
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">First name</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-											placeholder="First name" class="input-block__inp input-block__inp_acc-info input">
+										<div class="product-cart__buttons">
+											<button type="submit"
+												class="product-cart__btn button_white-cart _icon-add-favaorite">MOVE
+												TO
+												FAVORITES</button>
+											<button type="submit"
+												class="product-cart__btn product-cart__btn button_white-cart "><span></span>
+												REMOVE</button>
+										</div>
 									</div>
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">Last name</label>
-										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
-											placeholder="Last name" class="input-block__inp ">
-									</div>
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">Email</label>
-										<input autocomplete="off" placeholder="Email" type="text" name="form[]"
-											data-error="Ошибка" class="input-block__inp">
-									</div>
-									<div class=" form-block__select">
-										<label for="" class="input-block__label">Gender</label>
+									<div class="product-cart__section-qty">
 										<select name="form[]" class="form">
-											<option value="1" selected>Male</option>
-											<option value="2">Female</option>
-
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
 										</select>
 									</div>
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">Date of birth</label>
-										<input autocomplete="off" data-calendar type="text" name="form[]" data-error="Ошибка"
-											class="input-block__inp">
+									<div class="product-cart__section-price">
+										<div class="product-cart__value">₦ 10,000</div>
 									</div>
-									<div class=" form-block__block-input">
-										<a href="" class="form-block__link-change-pass">Change password</a>
+									<div class="product-cart__section-total">
+										<div class="product-cart__value">₦ 10,000</div>
 									</div>
-									<div class=" form-block__block-input">
-										<div class="checkbox">
-											<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
-												name="form[]">
-											<label for="c_1" class="checkbox__label"><span class="checkbox__text">Newsletter
-													subsciption</span></label>
+								</div>
+							</li>
+							<li class="product-cart__item">
+								<div class="product-cart__block  ">
+									<div class="product-cart__section-descript">
+										<div class="product-cart__description">
+											<a href="" class="product-cart__img">
+												<picture>
+													<source srcset="img/account/my-orders/01.webp" type="image/webp"><img
+														src="img/account/my-orders/01.jpg" alt="my-orders">
+												</picture>
+											</a>
+											<div class="product-cart__body">
+												<a href class="product-cart__name">Casual flat loafers</a>
+												<div class="product-cart__size">Size - EU: 36 US: 5.5</div>
+												<div class="product-cart__value product-cart__value_m">UNIT PRICE: ₦ 10,000</div>
+												<div class="product-cart__value product-cart__value_m">SUB TOTAL: ₦ 10,000</div>
+											</div>
+										</div>
+										<div class="product-cart__buttons">
+											<button type="submit"
+												class="product-cart__btn button_white-cart _icon-add-favaorite">MOVE
+												TO
+												FAVORITES</button>
+											<button type="submit"
+												class="product-cart__btn product-cart__btn button_white-cart "><span></span>
+												REMOVE</button>
 										</div>
 									</div>
-								</div>
-								<div class="form-block__item">
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">Current password</label>
-										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
-											placeholder="Current password" class="input-block__inp">
+									<div class="product-cart__section-qty">
+										<select name="form[]" class="form">
+											<option value="1" selected>1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
 									</div>
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">New password</label>
-										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
-											placeholder="New password" class="input-block__inp">
+									<div class="product-cart__section-price">
+										<div class="product-cart__value">₦ 10,000</div>
 									</div>
-									<div class=" form-block__block-input input-block">
-										<label for="" class="input-block__label">Confirm new password</label>
-										<input autocomplete="off" type="password" name="form[]" data-error="Ошибка"
-											placeholder="Confirm new password" class="input-block__inp">
+									<div class="product-cart__section-total">
+										<div class="product-cart__value">₦ 10,000</div>
 									</div>
 								</div>
-							</div>
-							<button type="submit" class="button">save changes</button>
-						</form>
+							</li>
+						</ul>
 					</div>
+					<div class="cart-main__footer footer-cart">
+						<div class="footer-cart__info">
+							<div class="footer-cart__sum-total">TOTAL: <span>₦ 20,000</spa>
+							</div>
+							<div class="footer-cart__text">Delivery fee not included yet</div>
+						</div>
+						<div class="footer-cart__btns">
+							<button type="submit" class="footer-cart__btn button button_border">CONTINUE SHOPPING</button>
+							<a href="shipping-details.html" class="footer-cart__btn button">PROCEED TO CHECKOUT</a>
+						</div>
+					</div>
+
 				</div>
-			</div>
+			</section>
+
+
 
 
 		</main>

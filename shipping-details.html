@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Shipping Details</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220411225244">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class=" header__container_small">
+				<a href="index.html" class="header__mobile-small-logo"><img src="img/header/Logo.svg" alt="LOGO"></a>
+				<div class="header__body">
+					<div class="header__row-left header__row-left_column ">
+						<nav class="header__nav mune-header">
+							<ul class="mune-header__list mune-header__list_column">
+								<li class="mune-header__item "><a href="index.html" class="mune-header__link ">Home</a>
+								</li>
+								<li class="mune-header__item"><a href="clothes.html" class="mune-header__link">Clothes</a></li>
+								<li class="mune-header__item"><a href="shoes.html" class="mune-header__link">Shoes</a></li>
+								<li class="mune-header__item"><a href="accessories.html"
+										class="mune-header__link">Accessories</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="index.html" class="header__logo"><img src="img/header/Logo.svg" alt="LOGO"></a>
+					<div class="header__row-right ">
+						<form action="#" class="from-header from-header__search">
+							<input autocomplete="off" type="search" name="form[]" data-error="Ошибка" placeholder="Search..."
+								class="from-header__input">
+							<button class="from-header__btn _icon-sherach"></button>
+						</form>
+						<nav class="header__nav mune-header">
+							<ul class="mune-header__list ">
+								<li class="mune-header__item "><a href="account-information.html"
+										class="mune-header__link _icon-profile "></a>
+								</li>
+								<li class="mune-header__item "><a href="cart.html"
+										class="mune-header__link _icon-cart-shop mune-header__link_icon"></a></li>
+								<li class="mune-header__item "><a href="account-my-favorites.html"
+										class="mune-header__link _icon-favorite"></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<button type="button" class="header__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<div class="details-shipping__container">
+				<div class="page__shipping-details details-shipping">
+					<form action="#" class="details-shipping__items">
+
+						<div class="details-shipping__item form-address">
+							<div class="form-address__title title-details-shipping">
+								<h3 class="title-details-shipping__title">Shipping Address</h3>
+							</div>
+							<div class="form-address__body">
+								<div class="form-address__block-input input-block ">
+									<label for="" class="input-block__label">Email</label>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										class="input-block__inp input-block__inp_ship-address input">
+								</div>
+								<div class="form-address__block-input input-block">
+									<label for="" class="input-block__label">Full name</label>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										class="input-block__inp input-block__inp_ship-address input">
+								</div>
+								<div class="form-address__block-input input-block">
+									<label for="" class="input-block__label">Address</label>
+									<textarea autocomplete="off" name="form[]" placeholder="" data-error="Ошибка"
+										class="input-block__inp nput-block__inp_ship-address input"></textarea>
+								</div>
+								<div class=" form-block__select form-block__select_address">
+									<label for="" class="input-block__label ">State/Province</label>
+									<select name="form[]" class="form">
+										<option value="1" selected>State</option>
+										<option value="2">Province</option>
+									</select>
+								</div>
+								<div class=" form-block__select form-block__select_address">
+									<label for="" class="input-block__label">City</label>
+									<select name="form[]" class="form">
+										<option value="1" selected>City</option>
+										<option value="2">City</option>
+									</select>
+								</div>
+								<div class="form-address__block-input input-block">
+									<label for="" class="input-block__label">Email</label>
+									<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+										class="input-block__inp input-block__inp_ship-address input">
+								</div>
+								<div class=" form-block__block-input">
+									<div class="checkbox">
+										<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1"
+											name="form[]">
+										<label for="c_1" class="checkbox__label"><span class="checkbox__text">Set default
+												shipping address</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="details-shipping__item from-delivery">
+							<div class="from-delivery__options  from-delivery__options_row options">
+								<div class="from-delivery__title title-details-shipping">
+									<h3 class="title-details-shipping__title title-details-shipping__title_pink">Delivery method
+									</h3>
+								</div>
+								<div class="from-delivery__body">
+									<div class="options__item">
+										<input hidden id="o_1" class="options__input" type="radio" value="1"
+											name="delivery_option">
+										<label for="o_1" class="options__label"><span class="options__text">₦ 2,000</span></label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_2" class="options__input" type="radio" value="2"
+											name="delivery_option">
+										<label for="o_2" class="options__label"><span class="options__text">Delivery
+												fee</span></label>
+									</div>
+									<div class="options__item">
+										<input hidden id="o_3" class="options__input" type="radio" value="3"
+											name="delivery_option">
+										<label for="o_3" class="options__label"><span class="options__text">Door
+												delivery</span></label>
+									</div>
+								</div>
+							</div>
+							<div class="from-delivery__options from-delivery__options_column options">
+								<div class="from-delivery__title title-details-shipping">
+									<h3 class="title-details-shipping__title title-details-shipping__title_pink">Payment Methods
+									</h3>
+								</div>
+								<div class="options__item">
+									<input hidden id="o_5" class="options__input" type="radio" value="5" name="option">
+									<label for="o_5" class="options__label"><span class="options__text">Pay with card
+										</span></label>
+								</div>
+								<div class="from-delivery__info">
+									<p class="from-delivery__text">(Get 5% off total price and money <br>
+										back guarantee)</p>
+									<p class="from-delivery__sub-text">You will be redirected to Paystack payment gateway </p>
+								</div>
+								<div class=" options__item">
+									<input hidden id="o_6" class="options__input" type="radio" value="6" name="option">
+									<label for="o_6" class="options__label"><span class="options__text">Pay on
+											delivery</span></label>
+								</div>
+								<div class="from-delivery__info">
+									<ul class="from-delivery__list">
+										<li class="from-delivery__item">Kindly note that we will only accept POS payment option on
+											delivery</li>
+										<li class="from-delivery__item">You have to make payment before opening package</li>
+										<li class="from-delivery__item">Once the seal is broken, item can only be returned if
+											damaged or defective </li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="details-shipping__item from-order-summary">
+							<div class="from-order-summary__title title-details-shipping">
+								<h3 class="title-details-shipping__title title-details-shipping__title_none">ORDER SUMMARY
+								</h3>
+							</div>
+							<div class="from-order-summary__body">
+								<div class="from-order-summary__block-product  product-block">
+									<div class="product-block__item">
+										<a href="" class="product-block__img">
+											<picture>
+												<source srcset="img/account/my-orders/01.webp" type="image/webp"><img
+													src="img/account/my-orders/01.jpg" alt="my-orders">
+											</picture>
+										</a>
+										<div class="product-block__body">
+											<a href class="product-block__name">Casual flat loafers</a>
+											<div class="product-block__size">Size - EU: 36 US: 5.5</div>
+											<div class="product-block__price">₦ 10,000</div>
+											<div class="product-block__block-qty">
+												<div class="product-block__qty">Qty</div>
+												<button type="submit" class="product-block__button"></button>
+												<div class="product-block__counter">1</div>
+												<button type="submit"
+													class="product-block__button product-block__button_minus"></button>
+											</div>
+										</div>
+									</div>
+									<div class="product-block__item">
+										<a href="" class="product-block__img">
+											<picture>
+												<source srcset="img/account/my-orders/02.webp" type="image/webp"><img
+													src="img/account/my-orders/02.jpg" alt="my-orders">
+											</picture>
+										</a>
+										<div class="product-block__body">
+											<a href class="product-block__name">Casual flat loafers</a>
+											<div class="product-block__size">Size - EU: 36 US: 5.5</div>
+											<div class="product-block__price">₦ 10,000</div>
+											<div class="product-block__block-qty">
+												<div class="product-block__qty">Qty</div>
+												<button type="submit" class="product-block__button"></button>
+												<div class="product-block__counter">1</div>
+												<button type="submit"
+													class="product-block__button product-block__button_minus"></button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="from-order-summary__price price-block">
+									<div class="price-block__item"><span class="price-block__value">Cart sub-total</span> <span
+											class=" price-block__value">₦
+											20,000</span>
+									</div>
+									<div class="price-block__item"><span class="price-block__value">Card discount</span><span
+											class="price-block__value">- ₦ 1,000</span>
+									</div>
+									<div class="price-block__item"><span class="price-block__value">Delivery fee</span><span
+											class="price-block__value">₦ 2,000</span>
+									</div>
+								</div>
+								<div class="from-order-summary__total total-block">
+									<div class="total-block__item">TOTAL</div>
+									<div class="total-block__item total-block__item_pinc-color">₦ 21,000</div>
+								</div>
+								<div class="from-order-summary__gift gift-block">
+									<div class="gift-block__body">
+										<div class="gift-block__text">Is this a gift?</div>
+										<div class="gift-block__bts">
+											<button type="submit" class="gift-block__button button button_gift">Yes</button>
+											<button type="submit" class="gift-block__button button button_gift-w">No</button>
+										</div>
+									</div>
+									<div class="gift-block__info">A complimentary gift receipt will be included in the package,
+										and
+										prices will be hidden on the receipt.</div>
+								</div>
+							</div>
+							<button type="submit" class="from-order-summary__btn button">PLACE ORDER</button>
+						</div>
+				</div>
+
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body">
+					<a href="" class="footer__logo"><img src="img/header/Logo.svg" alt="LOGO"></a>
+					<div class="footer__nav-block menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">About Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Contact</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Terms & Conditions</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__social menu-footer">
+						<nav class="menu-footer-block__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item "><a href=""
+										class="menu-footer__link menu-footer__link_icon _icon-facebook ">Facebook</a>
+								</li>
+								<li class="menu-footer__item "><a href=""
+										class="menu-footer__link menu-footer__link_icon _icon-twitter ">Twiter</a></li>
+								<li class="menu-footer__item "><a href=""
+										class="menu-footer__link menu-footer__link_icon _icon-instagram ">Instagram</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<form class="footer__sub subscribe-block">
+						<label for="" class="subscribe-block__label">Subscribe to our newsletter</label>
+						<div class="subscribe-block__block-input">
+							<input autocomplete="off" required type="email" name="form[]" data-error="Ошибка"
+								placeholder="Email Address" class="subscribe-block__input">
+							<button type="submit" class="subscribe-block__button">OK</button>
+						</div>
+					</form>
+					<div class="footer__contacts contacts-footer">
+						<div class="contacts-footer__address">497 Evergreen Rd. Roseville, CA 95673</div>
+						<div class="contacts-footer__tel"><a href="">+44 345 678 903</a></div>
+						<div class="contacts-footer__email">adobexdd@emal.com</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220411225244"></script>
+</body>
+
+</html>
