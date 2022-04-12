@@ -6380,7 +6380,8 @@
           const t = e.target;
           t.closest(".account__burger-button") &&
             (i.classList.add("_active"),
-            document.documentElement.classList.add("lock")),
+            document.documentElement.classList.add("lock"),
+            (document.documentElement.style.position = "relative")),
             (t.closest(".sidebar-acc__btn") || t.closest(".account__bg")) &&
               (i.classList.remove("_active"),
               document.documentElement.classList.remove("lock"),

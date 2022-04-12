@@ -1076,13 +1076,13 @@ body {
   letter-spacing: 0.2px;
   font-weight: 800;
   line-height: 1.125;
-  height: 100%;
 }
 @media (max-width: 47.99875em) {
   .sidebar-acc {
-    position: absolute;
+    position: fixed;
     width: 313px;
-    height: 100%;
+    height: 100vh;
+    overflow: auto;
     top: 0px;
     left: -100%;
     transition: left 0.3s ease 0s;
@@ -1102,8 +1102,8 @@ body {
   .sidebar-acc__btn {
     display: block;
     position: absolute;
-    right: 10%;
-    top: 5%;
+    right: 20px;
+    top: 20px;
     height: 50px;
     width: 50px;
     font-size: 1.25rem;
@@ -1170,6 +1170,9 @@ body {
   z-index: 10;
   padding-left: 32px;
   font-size: 14px;
+  height: 30px;
+  display: flex;
+  align-items: center;
 }
 .mune-acc__link::before {
   display: inline-block;
@@ -2251,6 +2254,22 @@ body {
   line-height: 1.125;
   color: #ed165f;
 }
+.form-block__select {
+  max-width: 350px;
+}
+.form-block__select .select {
+  width: 100%;
+}
+.form-block__select .select .select__title {
+  width: 100%;
+}
+.form-block__select .select .select__value {
+  padding: 0;
+}
+.form-block__select .select .select__options {
+  min-width: 100%;
+}
+
 /* Address Book */
 .book-address > *:not(:last-child) {
   margin: 0px 0px 16px 0px;
@@ -2879,6 +2898,9 @@ body {
   width: 100%;
 }
 .form-block__select_address .select_form .select__title {
+  width: 100%;
+}
+.form-block__select_address .select_form .select__options {
   width: 100%;
 }
 .form-block__block-input {
@@ -3576,7 +3598,7 @@ body {
   padding: 0;
 }
 .row-top-clothes__select .select__options {
-  width: 100%;
+  width: 200px;
   border-radius: 0;
 }
 .swiper {
